@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantav Goyal | Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --text: #333;
+            --bg: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            border-right: 1px solid #eee;
+            padding-right: 20px;
+        }
+
+        h1 { margin: 0; font-size: 24px; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; }
+        h2 { font-size: 16px; border-bottom: 2px solid var(--accent); padding-bottom: 5px; margin-top: 30px; text-transform: uppercase; }
+        
+        .contact-info p { font-size: 13px; margin: 5px 0; }
+        .skill-tag { 
+            display: inline-block; 
+            background: #e1f0fa; 
+            color: #2980b9; 
+            padding: 4px 10px; 
+            border-radius: 4px; 
+            font-size: 12px; 
+            margin: 2px; 
+        }
+
+        /* Main Content Styling */
+        .main-content h3 { margin-bottom: 5px; color: var(--primary); }
+        .project-item { margin-bottom: 20px; }
+        .date { font-style: italic; color: #777; font-size: 14px; }
+
+        @media (max-width: 600px) {
+            .resume-container { grid-template-columns: 1fr; }
+            .sidebar { border-right: none; padding-right: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+    <aside class="sidebar">
+        <h1>Mantav Goyal</h1>
+        <p>B.Tech Student @ NITJ</p>
+        
+        <div class="contact-info">
+            <h2>Contact</h2>
+            <p>Jalandhar, Punjab</p>
+            <p><a href="mailto:mantavg.ce.25@nitj.ac.in" style="text-decoration: none; color: inherit;">mantavg.ce.25@nitj.ac.in</a></p>
+            
+            <p>
+                <a href="https://www.linkedin.com/in/mantav-goyal-1b869038a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">
+                    LinkedIn ↗
+                </a>
+            </p>
+            <p>
+                <a href="https://github.com/mantav0507-cell" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">
+                    GitHub ↗
+                </a>
+            </p>
+        </div>
+
+        <h2>Skills</h2>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">HTML/CSS</span>
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">DSA</span>
+        <span class="skill-tag">Business Analytics</span>
+
+        <h2>Education</h2>
+        <p><strong>NIT Jalandhar</strong><br>B.Tech (2025-29)</p>
+        <p><strong>Class 12</strong><br>90% Score</p>
+    </aside>
+
+    <main class="main-content">
+        <h2>Professional Summary</h2>
+        <p>Aspiring Engineer with a 97 percentile JEE rank. Passionate about leveraging Python and ML to solve complex data problems and building scalable web architectures.</p>
+
+        <h2>Key Projects</h2>
+        <div class="project-item">
+            <h3>Student Data Management System</h3>
+            <span class="date">Python, Logic Design</span>
+            <p>Engineered a performance tracking system that automates record-keeping for academic institutions.</p>
+        </div>
+
+        <div class="project-item">
+            <h3>Academic Portfolio</h3>
+            <span class="date">HTML5, Web Dev</span>
+            <p>Built a semantic, accessible digital footprint to showcase technical milestones and project repositories.</p>
+        </div>
+
+        <h2>Interests</h2>
+        <p>Geopolitics, Economic Systems, Emerging AI Technologies, and Global Market Trends.</p>
+    </main>
+</div>
+
+</body>
+</html>
